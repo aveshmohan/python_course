@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+
+    <style>
+        .navbar-brand{
+            font-family: 'Pacifico';font-size: 22px;
+            font-size: 40px;
+            color: rgb(236, 34, 37);
+
+        }
+        .one {
+            justify-content: center;
+            
+        }
+        ul{
+          margin-left: 400px;
+        }
+        input{
+          border-radius: .5rem;
+          width: 65%;
+        }
+        .carousel-inner{
+          height: 600px;
+        }
+        .col-4{
+          height: 300px;
+        }
+        .col-4,.col-8{
+          border: 2px solid black;
+          padding: 20px;
+          
+        }
+        .col-4{
+          height: 800px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Paragon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active one" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link one" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a  class="nav-link dropdown-toggle one" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="#">food</a></li>
+                  <li><a class="dropdown-item " href="#">beverages</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link disabled one " aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+        
+            <form class="d-flex" role="search">
+                <!-- Button trigger modal -->
+<button style="background-color: rgb(189, 78, 78);width: 100px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Login
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login Page</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input placeholder="Email" type="email" name="" id=""><br><br>
+          <input placeholder="Password" type="password"><br><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+              
+              
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?cs=srgb&dl=pexels-chan-walrus-958545.jpg&fm=jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/id/1398630614/photo/bacon-cheeseburger-on-a-toasted-bun.jpg?s=2048x2048&w=is&k=20&c=BZiNKDrgDpdXFKimB69ynYx6kZeSQBzrWAomGs05GEg=" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.shutterstock.com/image-photo/latte-americano-orange-juice-lime-600nw-2122885682.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum tempora veritatis recusandae dolores temporibus laborum mollitia, neque natus illum obcaecati. <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Vwd2s2MTY2MTU3Ny13aWtpbWVkaWEtaW1hZ2Uta293YXBlZWouanBn.jpg" width="470px" height="220px"><br><div><h2>lorem</h2> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere veritatis voluptates quos ea fugit eveniet necessitatibus doloremque! Culpa explicabo ipsa accusantium <img src="https://st.depositphotos.com/1005682/2606/i/450/depositphotos_26067545-stock-photo-burger-with-fast-food-items.jpg" width="470px"></div>
+          </div>
+          <div class="col-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officiis voluptatum repudiandae, impedit aspernatur distinctio ut veritatis asperiores odio. Omnis, aut! Provident quos, laborum iste quaerat commodi totam! Saepe quidem odit iusto modi illum tenetur ipsa dolorem enim assumenda, eaque placeat est, autem in magnam sequi eligendi molestias consectetur possimus ratione nisi accusamus consequatur! Ea facere laborum esse quod reprehenderit dolor delectus incidunt voluptates ducimus ratione deserunt accusamus, harum, numquam quia quisquam veritatis? Sapiente odit totam praesentium. Vero soluta, explicabo consectetur iure, itaque incidunt consequatur odio harum possimus perferendis ipsum molestiae excepturi sunt atque quia sint laudantium. Repellat, maxime molestias. <img src="https://t3.ftcdn.net/jpg/03/24/73/92/360_F_324739203_keeq8udvv0P2h1MLYJ0GLSlTBagoXS48.jpg" alt="" width="1000px">
+            
+          </div>
+        </div>
+        
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
